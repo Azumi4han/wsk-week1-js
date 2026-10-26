@@ -17,7 +17,7 @@ function sortArray(numbers, order) {
     return sorted.sort((a, b) => b - a);
   }
 
-  throw new Error('Order must be either "asc" or "desc".');
+  throw new Error('Order must be either "asc" or "desc"');
 }
 
 const numbers = [5, 2, 8, 1, 9];

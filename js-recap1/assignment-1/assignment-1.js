@@ -9,12 +9,12 @@ function show(message) {
 const input = prompt('Enter a temperature in Celsius:');
 
 if (input === null || input.trim() === '') {
-  show('No temperature was entered.');
+  show('No temperature was entered');
 } else {
   const celsius = Number(input);
 
   if (!Number.isFinite(celsius)) {
-    show('Please enter a valid number.');
+    show('Please enter a valid number');
   } else {
     const fahrenheit = (celsius * 9) / 5 + 32;
     const kelvin = celsius + 273.15;

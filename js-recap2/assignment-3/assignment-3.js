@@ -24,7 +24,7 @@ while (true) {
   const number = Number(value);
 
   if (value === '' || !Number.isFinite(number)) {
-    show(`"${value}" is not a valid number.`);
+    show(`"${value}" is not a valid number`);
     continue;
   }
 
@@ -43,4 +43,4 @@ show(`Numbers entered: ${numbers.join(', ')}`);
 show(
   `Even Numbers: ${evenNumbers.length > 0 ? evenNumbers.join(', ') : 'None'}`
 );
-show('Program finished.');
+show('Program finished');

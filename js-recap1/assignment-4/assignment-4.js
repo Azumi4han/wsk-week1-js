@@ -9,12 +9,12 @@ function show(message) {
 const input = prompt('Enter your score (0-100):');
 
 if (input === null || input.trim() === '') {
-  show('No score was entered.');
+  show('No score was entered');
 } else {
   const score = Number(input);
 
   if (!Number.isFinite(score) || score < 0 || score > 100) {
-    show('Please enter a score between 0 and 100.');
+    show('Please enter a score between 0 and 100');
   } else {
     let grade;
 

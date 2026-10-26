@@ -9,12 +9,12 @@ function show(message) {
 const input = prompt('Enter a positive integer:');
 
 if (input === null || input.trim() === '') {
-  show('No number was entered.');
+  show('No number was entered');
 } else {
   const size = Number(input);
 
   if (!Number.isInteger(size) || size <= 0) {
-    show('Please enter a positive integer.');
+    show('Please enter a positive integer');
   } else {
     show(`Multiplication table up to ${size}:`);
 

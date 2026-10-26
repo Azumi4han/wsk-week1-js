@@ -30,12 +30,12 @@ function askRating(message) {
 const countInput = prompt('How many movies do you want to rate?');
 
 if (countInput === null || countInput.trim() === '') {
-  show('No number of movies was entered.');
+  show('No number of movies was entered');
 } else {
   const count = Number(countInput);
 
   if (!Number.isInteger(count) || count <= 0) {
-    show('Please enter a positive integer.');
+    show('Please enter a positive integer');
   } else {
     const movies = [];
 
@@ -43,14 +43,14 @@ if (countInput === null || countInput.trim() === '') {
       const title = askText(`Enter the title of movie ${i}:`);
 
       if (title === null) {
-        show(`Movie ${i} was not entered.`);
+        show(`Movie ${i} was not entered`);
         break;
       }
 
       const rating = askRating(`Enter the rating for "${title}" (1-5):`);
 
       if (rating === null) {
-        show(`A rating from 1 to 5 is required for "${title}".`);
+        show(`A rating from 1 to 5 is required for "${title}"`);
         break;
       }
 
@@ -58,7 +58,7 @@ if (countInput === null || countInput.trim() === '') {
     }
 
     if (movies.length === 0) {
-      show('No movies were rated.');
+      show('No movies were rated');
     } else {
       movies.sort((a, b) => b.rating - a.rating);
 

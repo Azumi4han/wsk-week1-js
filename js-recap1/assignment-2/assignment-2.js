@@ -23,7 +23,7 @@ const x2 = askNumber('x2');
 const y2 = askNumber('y2');
 
 if ([x1, y1, x2, y2].includes(null)) {
-  show('All four coordinates must be valid numbers.');
+  show('All four coordinates must be valid numbers');
 } else {
   const distance = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
 

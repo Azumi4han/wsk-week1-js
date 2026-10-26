@@ -28,7 +28,7 @@ if (
     (vegetable) => vegetable === null || vegetable.trim() === ''
   )
 ) {
-  show('All three vegetables are required.');
+  show('All three vegetables are required');
 } else {
   vegetables.push(vegetable1.trim(), vegetable2.trim(), vegetable3.trim());
 

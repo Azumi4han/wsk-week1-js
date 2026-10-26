@@ -22,13 +22,13 @@ const sideB = askSide('b');
 const sideC = askSide('c');
 
 if ([sideA, sideB, sideC].includes(null)) {
-  show('All three sides must be positive numbers.');
+  show('All three sides must be positive numbers');
 } else if (!(sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA)) {
-  show('These side lengths do not form a triangle.');
+  show('These side lengths do not form a triangle');
 } else if (sideA === sideB && sideB === sideC) {
-  show('The triangle is equilateral: all three sides are equal.');
+  show('The triangle is equilateral: all three sides are equal');
 } else if (sideA === sideB || sideB === sideC || sideA === sideC) {
-  show('The triangle is isosceles: exactly two sides are equal.');
+  show('The triangle is isosceles: exactly two sides are equal');
 } else {
-  show('The triangle is scalene: no sides are equal.');
+  show('The triangle is scalene: no sides are equal');
 }

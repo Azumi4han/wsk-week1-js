@@ -25,7 +25,7 @@ const number5 = askNumber('number 5');
 const numbers = [];
 
 if ([number1, number2, number3, number4, number5].includes(null)) {
-  show('Please enter five valid numbers.');
+  show('Please enter five valid numbers');
 } else {
   numbers.push(number1, number2, number3, number4, number5);
   show(`Numbers: ${numbers.join(', ')}`);
@@ -33,18 +33,18 @@ if ([number1, number2, number3, number4, number5].includes(null)) {
   const searchInput = prompt('Enter a number to search:');
 
   if (searchInput === null || searchInput.trim() === '') {
-    show('No search number was entered.');
+    show('No search number was entered');
   } else {
     const searchNumber = Number(searchInput);
 
     if (!Number.isFinite(searchNumber)) {
-      show('Please enter a valid number to search.');
+      show('Please enter a valid number to search');
     } else {
       const found = numbers.includes(searchNumber);
       show(
         found
-          ? `Number ${searchNumber} is found in the array.`
-          : `Number ${searchNumber} is not found in the array.`
+          ? `Number ${searchNumber} is found in the array`
+          : `Number ${searchNumber} is not found in the array`
       );
 
       numbers.pop();
